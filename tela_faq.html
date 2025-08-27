@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <!-- Incluindo o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Estilos personalizados para aumentar o tamanho dos textos -->
+    <style>
+        h4 {
+            font-size: 1.8rem; /* Aumenta o tamanho dos h4 */
+        }
+        p {
+            font-size: 1.3rem; /* Aumenta o tamanho dos parágrafos */
+        }
+    </style>
+</head>
+<body>
+  <script src="scripts_gerais.js"></script>
+  <!-- Navbar importada de navbar.html -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+  <div id="navbar"></div>
+    
+    <!-- Seção de FAQ -->
+    <div class="container bg-dark text-light p-4 min-vh-100 min-vw-100 d-flex flex-column">
+      <div class="text-center">
+        <h1 class= "mb-5 mt-2"style="text-align: left;"><strong>Perguntas frequentes</strong></h1>
+      </div>
+      <div class="text-center mb-5 mt-1">
+        <h4 style="text-align: left;"><strong>O que é CO2/PIB?</strong></h4>
+        <p style="text-align: left;">
+          A correlação entre as emissões de CO2 e o Produto Interno Bruto reflete a quantidade de dióxido de carbono emitido 
+          por um país em relação ao valor total de bens e serviços que ele produz. Ao analisar esses dados, podemos observar 
+          como o crescimento econômico e as emissões estão interligados e quais países estão conseguindo descarbonizar suas economias.
+        </p>
+      </div>
+      <div class="text-center mb-5 mt-1">
+        <h4 style="text-align: left;"><strong>Como os dados foram coletados?</strong></h4>
+        <p style="text-align: left;">
+          Os dados apresentados são extraídos de fontes confiáveis, como o 
+          <a href="https://worldbank.org" target="_blank">World Bank</a> e 
+          <a href="https://climatewatch.org" target="_blank">Climate Watch</a>. A base de dados cobre o período de 
+          2000 a 2020, permitindo uma visão completa das tendências ao longo de duas décadas.
+        </p>
+      </div>
+      <div class="text-center mb-5 mt-1">
+        <h4 style="text-align: left;"><strong>Qual o formato dos dados?</strong></h4>
+        <p style="text-align: left;">
+          Os dados de PIB estão em trilhão de dólar, enquanto os de CO2 estão em MTCO2 (Tonelada métrica de CO2).
+          Quando é feita a relação, mostramos cada miligrama de CO2 para cada dólar de PIB.
+        </p>
+      </div>
+      <div class="text-center mb-5 mt-1">
+        <h4 style="text-align: left;"><strong>Posso baixar o conteúdo dos gráficos?</strong></h4>
+        <p style="text-align: left;">
+          É possível baixar o conteúdo de todos os gráficos clicando no botão de <strong>Download</strong> abaixo de qualquer gráfico,
+          disponibilizando o JSON para qualquer um.
+        </p>
+      </div>
+    </div>
+</body>
+</html>

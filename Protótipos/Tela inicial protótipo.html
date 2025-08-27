@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CO2/PIB</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .highlight-background {
+      background-color: #f8f9fa;
+      padding: 10px;
+      border-radius: 8px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .larger-text {
+      font-size: 1.15rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="bg-dark text-light py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Título do site -->
+      <div>
+        <h5 class="m-0">CO2/PIB</h5>
+      </div>
+
+      <!-- Escolha de idioma -->
+      <div class="text-center">
+        <a href="#" class="text-light mx-2">Português Brasileiro</a> / 
+        <a href="#" class="text-light mx-2">English</a>
+      </div>
+
+      <!-- Barra de pesquisa -->
+      <div>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
+          <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container Principal -->
+  <div class="container mt-4">
+    <div class="text-center mb-4">
+      <h2 class="text-dark">Este site tem como objetivo disponibilizar dados de correlação entre emissões de CO2 (Dióxido de Carbono) e o PIB (Produto Interno Bruto), de 2000 a 2020.</h2>
+      <!-- Texto levemente aumentado -->
+      <p class="larger-text">Os dados utilizados para a relação entre os dados são originados do <a href="#" class="text-info">World Bank (PIB)</a> e <a href="#" class="text-info">Climate Watch (CO2)</a>, ambos sendo dados abertos.</p>
+    </div>
+    
+    <!-- Texto da barra de pesquisa levemente aumentado -->
+    <div class="text-center mb-4">
+      <p class="larger-text">Por meio da barra de pesquisa inicial é possível <strong>buscar o país</strong> que deseja visualizar a relação, podendo também <strong>baixar os dados</strong>, para que possam ser usados por outros livremente.</p>
+    </div>
+
+    <!-- Título e Lista dos Países com fundo acinzentado -->
+    <div class="text-center">
+      <h4>Explore o site clicando em um dos países abaixo.</h4>
+      <h5>Top 10 países com maior emissão de CO2 (2020)</h5>
+      
+      <!-- Caixa com fundo acinzentado levemente ajustada -->
+      <div class="highlight-background">
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-info">1. China</a></li>
+          <li><a href="#" class="text-info">2. Estados Unidos</a></li>
+          <li><a href="#" class="text-info">3. Índia</a></li>
+          <li><a href="#" class="text-info">4. Rússia</a></li>
+          <li><a href="#" class="text-info">5. Indonésia</a></li>
+          <li><a href="#" class="text-info">6. Japão</a></li>
+          <li><a href="#" class="text-info">7. Brasil</a></li>
+          <li><a href="#" class="text-info">8. Alemanha</a></li>
+          <li><a href="#" class="text-info">9. República Democrática do Congo</a></li>
+          <li><a href="#" class="text-info">10. Canadá</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

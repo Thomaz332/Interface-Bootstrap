@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-5">
+    <a class="navbar-brand ms-3" href="#">CO2/PIB</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Página inicial</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Linguagem
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Português Brasileiro</a>
+            <a class="dropdown-item" href="#">English</a>
+          </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tela_faq.html">Perguntas frequentes</a>
+          </li>
+      </ul>
+      <form class="d-flex ms-auto my-2 my-lg-0 me-3" onsubmit="return buscarPais() "> 
+        <div class="position-relative">
+          <input id="campoBusca" class="form-control me-2" type="search" placeholder="Buscar país" aria-label="Search" oninput="mostrarSugestoes()">
+          <div id="sugestoes" class="autocomplete-suggestions"></div>
+        </div>
+        <button class=" ms-2 btn btn-outline-success my-2 my-sm-0" type="submit">
+          <i class="fas fa-search"></i> <!-- Ícone de lupa -->
+        </button>
+      </form>
+  </nav>
